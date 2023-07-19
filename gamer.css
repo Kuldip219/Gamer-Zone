@@ -5,7 +5,8 @@
 nav ul{
     display: flex;
     list-style: none;
-    padding-top: 40px;
+    padding-top: 0px;
+    align-items: center;
 }
 .container{
     display: flex;
@@ -14,6 +15,17 @@ nav ul{
     top: 0px;
     background: #FFF;
     box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
+}
+.container1{
+    border-radius: 8px;
+    background: rgba(11, 2, 35, 0.10);
+    padding: 10px;
+    align-items: center;
+}
+.head-image{
+    width: 30px;
+    height: 30px;
+    padding-right: 10px;
 }
 #span{
     color:#FF42A5;
@@ -46,6 +58,9 @@ nav div{
 }
 .tab{
     padding: 30px;
+}
+.list{
+    align-items: center;
 }
 
 
@@ -412,21 +427,32 @@ footer{
 @media screen and (max-width: 425px) {
     .container, section{
         flex-direction: column;
+        align-items: center;
+    }
+    .container1{
+        background: none;
+    }
+    .list img{
+        display: none;
     }
     nav ul{
         flex-direction: column;
         text-align: center;
-        padding-top: 10px;
+        padding-top: 0px;
+        padding-left: 15px;  
     }
     li{
         padding-top: 20px
+    }
+    .head-img{
+        width: 400px;
     }
     .tab{
         justify-content: center;
     }
     .list{
-        padding-left: 160px;
         padding-bottom: 30px;
+        align-items: center;
     }
     .banner-left{
         padding: 0;
@@ -436,7 +462,7 @@ footer{
         text-align: center;
     }
     #buttons{
-        padding: 20px 0px 30px 90px;
+        padding: 20px 0px 30px 40px;
     }
     .image{
         padding: 0px;
