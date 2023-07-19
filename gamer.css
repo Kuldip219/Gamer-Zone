@@ -308,12 +308,101 @@ span{
     background: #FFF;
     padding: 5px;
 }
+.last-boxs{
+    display: flex;
+    align-items: center;
+    border-radius: 50px;
+    background: #FFF;
+    padding: 5px;
+}
 .last-b{
     justify-content: center;
 }
 .last-des{
     padding: 15px;
     font-family: 'Lato', sans-serif;
+}
+.last-box:hover{
+    border: 3px solid #FF42A5;
+    color: #FF42A5;
+}
+.last-boxs:hover{
+    border: 3px solid #FF42A5;
+    color: #FF42A5;
+}
+
+
+
+/*footer*/
+footer{
+    text-align: center;
+    background: #0B0223;
+}
+.footer-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    padding-top: 80px;
+}
+#l-title{
+    color: #FFF;
+    font-family: 'Lato', sans-serif;
+    font-size: 43px;
+    font-style: normal;
+    font-weight: 690;
+    line-height: normal;
+    padding: 10px;
+}
+.color{
+    background: linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.list-l{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    gap: 50px;
+    padding: 20px;
+}
+.footer-list{
+    color: #FFF;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+.l-img{
+    width: 40px;
+    padding: 20px 20px 20px 20px;
+}
+.more-list{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding: 20px;
+    color: rgba(255, 255, 255, 0.60);
+    text-align: center;
+    font-family: Work Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.footer-last{
+    padding: 20px;
+    padding-bottom: 80px;
+    color: rgba(255, 255, 255, 0.60);
+    text-align: center;
+    font-family: Work Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
 }
 
 
@@ -377,8 +466,6 @@ span{
     .rec-67{
         width: 300px;
         padding-right: 40px;
-        padding-top: 100px;
-        
     }
     .rec-66{
         width: 150px;
@@ -391,5 +478,35 @@ span{
     }
     .unique-img{
         height: 500px;
+    }
+    .box{
+        flex-direction: column;
+        gap: 0px;
+        padding-top: 0;
+        padding-bottom: 0PX;
+    }
+    .last-b{
+        justify-content:center;
+    }
+    .last-bx{
+        padding: 0px;
+    }
+    .last-img{
+        width: 40px;
+    }
+    .last-box{
+        width: auto;
+        height: auto;
+    }
+    .last-boxs{
+        width:auto;
+    }
+    .last-des{
+        padding: 0px;
+    }
+    .list-l{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        align-items: center;
     }
 }
