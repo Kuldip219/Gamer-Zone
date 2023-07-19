@@ -54,7 +54,7 @@ section{
     display: flex;
 }
 .banner-left{
-    padding: 140px 500px 100px 200px;
+    padding: 170px 700px 100px 290px;
     background-image: url(images/Group\ 14.png);
     background-repeat: no-repeat;
 }
@@ -67,6 +67,9 @@ section{
     font-weight: 550;
     line-height: normal;
     text-transform: uppercase;
+}
+.head-img{
+    padding-left: 300px;
 }
 #goat{
     text-align: center;
@@ -127,4 +130,121 @@ section{
     line-height: normal;
     text-transform: uppercase;
     border: none;
+}
+
+
+/*header last*/
+#section{
+    display: flex;
+    background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
+}
+.image{
+    padding: 55px 0 56px 240px;
+}
+#head-l{
+    text-align: right;
+    padding: 120px 240px 96px 0px;
+}
+.head-l-title{
+    text-align: right;
+    font-family: 'Lato', sans-serif;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding-bottom: 10px;
+}
+.head-l-description{
+    color: #534C64;
+    text-align: right;
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    padding-bottom: 10px;
+}
+.button{
+    display: inline-flex;
+    padding: 15px 30px;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 48px;
+    background: var(--linear, linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%));color: #FFF;
+    font-family: 'Lato', sans-serif;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+    border: none;
+}
+#purpose{
+    color: #534C64;
+    text-align: right;
+    font-family: 'Lato', sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 45px; /* 187.5% */
+}
+#every{
+    color: #534C64;
+    font-family: 'Lato', sans-serif;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 45px;
+}
+
+
+
+/*mobile devices*/
+@media screen and (max-width: 425px) {
+    .container, section{
+        flex-direction: column;
+    }
+    nav ul{
+        flex-direction: column;
+        text-align: center;
+        padding-top: 10px;
+    }
+    li{
+        padding-top: 20px
+    }
+    .tab{
+        justify-content: center;
+    }
+    .list{
+        padding-left: 160px;
+        padding-bottom: 30px;
+    }
+    .banner-left{
+        padding: 0;
+        padding-top: 30px;
+    }
+    .head-d{
+        text-align: center;
+    }
+    #buttons{
+        padding: 20px 0px 30px 90px;
+    }
+    .image{
+        padding: 0px;
+    }
+    #head-l{
+        text-align: center;
+        padding: 0px;
+    }
+    #img{
+        width: 430px;
+    }
+    .head-l-title, .head-l-description, #purpose{
+        text-align: center;
+    }
+    
 }
